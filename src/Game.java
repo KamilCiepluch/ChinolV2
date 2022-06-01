@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Game {
 	//Gra start
 	public static void main(String[] args) {
+		/*
 		Board board=new Board();
 		board.boardInitialize();
 		List<Player> playerList=new ArrayList<>();
@@ -19,6 +20,21 @@ public class Game {
 			playerList.add(new Player("blue",24));
 		if(wybor>3)
 			playerList.add(new Player("green",36));
+
+		 */
+		Board board=new Board();
+		board.boardInitialize();
+		List<Player> playerList=new ArrayList<>();
+		playerList.add(new Player("red",0));
+		playerList.get(0).pawns.get(0).movePawn(1);
+		playerList.get(0).pawns.get(0).movePawn(22);
+		playerList.get(0).pawns.get(0).movePawn(24);
+		playerList.get(0).pawns.get(0).movePawn(1);
+		playerList.get(0).pawns.get(0).movePawn(1);
+		playerList.get(0).pawns.get(0).movePawn(1);
+		playerList.get(0).pawns.get(0).movePawn(1);
+
+
 	}
 
 }

@@ -6,7 +6,7 @@ public class Pawn {
 	int currentField;
 	int houseFieldID;
 	boolean canEnterHouse;
-
+	int fieldsCounter;
 
 
 	Pawn(String color,int pawnID,int houseFieldID)
@@ -16,6 +16,7 @@ public class Pawn {
 		this.inBase=true;
 		this.inHouse=false;
 		currentField=-1;
+		fieldsCounter=0;
 		this.houseFieldID=houseFieldID;
 	}
 
@@ -36,7 +37,9 @@ public class Pawn {
 				currentField=-1;
 			}
 		}
-
 	}
+
+
+
 }
 
