@@ -10,4 +10,16 @@ public class Pawn {
 		this.inBase=true;
 		this.inHouse=false;
 	}
+	int currentField;
+	int houseFieldID;
+
+
+	void movePawn(int number)
+	{
+		if(number<0) return;
+		currentField+= number;
+		if(number>48-1) number = number-48;
+
+	}
 }
+

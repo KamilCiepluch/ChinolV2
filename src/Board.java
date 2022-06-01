@@ -5,12 +5,6 @@ public class Board {
 	ArrayList<Field> board = new ArrayList<>();
 
 
-
-
-
-
-
-
 	public void boardInitialize()
 	{
 		int planasza_size = 48;
