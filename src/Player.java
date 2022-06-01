@@ -11,5 +11,6 @@ public class Player {
 	{
 		pawns.add(new Pawn());
 
+
 	}
 }

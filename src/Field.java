@@ -6,6 +6,7 @@ public class Field {
 	boolean startRed;
 
 
+
 	void setStart(String color)
 	{
 		switch (color) {

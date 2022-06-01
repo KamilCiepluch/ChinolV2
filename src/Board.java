@@ -10,6 +10,7 @@ public class Board {
 
 
 
+
 	public void boardInitialize()
 	{
 		int planasza_size = 48;

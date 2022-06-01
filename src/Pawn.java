@@ -4,3 +4,4 @@ public class Pawn {
 	boolean InBase;
 	boolean inHouse;
 }
+
