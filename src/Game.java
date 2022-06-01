@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Game {
+	//Gra start
 	public static void main(String[] args) {
 		Board board=new Board();
 		board.boardInitialize();
@@ -19,4 +20,5 @@ public class Game {
 		if(wybor>3)
 			playerList.add(new Player("green",36));
 	}
+
 }

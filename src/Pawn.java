@@ -5,6 +5,10 @@ public class Pawn {
 	boolean inHouse;
 	int currentField;
 	int houseFieldID;
+	boolean canEnterHouse;
+
+
+
 	Pawn(String color,int pawnID,int houseFieldID)
 	{
 		this.color=color;
@@ -15,13 +19,23 @@ public class Pawn {
 		this.houseFieldID=houseFieldID;
 	}
 
-
-
 	void movePawn(int number)
 	{
 		if(number<0) return;
 		currentField+= number;
-		if(number>48-1) number = number-48;
+		if(number>48-1)
+		{
+			number = number-48;
+			canEnterHouse = true;
+		}
+		if(canEnterHouse)
+		{
+			if(currentField>= houseFieldID)
+			{
+				inHouse=true;
+				currentField=-1;
+			}
+		}
 
 	}
 }
