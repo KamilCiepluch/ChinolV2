@@ -22,19 +22,23 @@ public class Pawn {
 
 	void movePawn(int number)
 	{
-		if(number<0) return;
-		currentField+= number;
-		if(number>48-1)
+		if(!inHouse && !inBase)
 		{
-			currentField = number-48;
-			canEnterHouse = true;
-		}
-		if(canEnterHouse)
-		{
-			if(currentField>= houseFieldID)
+			currentField+= number;
+			fieldsCounter+=number;
+
+			if(number>48-1)
 			{
-				inHouse=true;
-				currentField=-1;
+				currentField = number-48;
+				canEnterHouse = true;
+			}
+			if(fieldsCounter>=48 )
+			{
+				if(currentField >= houseFieldID)
+				{
+					inHouse=true;
+					currentField=-1;
+				}
 			}
 		}
 	}
