@@ -26,15 +26,36 @@ public class Game {
 		board.boardInitialize();
 		List<Player> playerList=new ArrayList<>();
 		playerList.add(new Player("red",0));
-		playerList.get(0).pawns.get(0).movePawn(1);
-		playerList.get(0).pawns.get(0).movePawn(22);
-		playerList.get(0).pawns.get(0).movePawn(24);
-		playerList.get(0).pawns.get(0).movePawn(1);
-		playerList.get(0).pawns.get(0).movePawn(1);
-		playerList.get(0).pawns.get(0).movePawn(1);
-		playerList.get(0).pawns.get(0).movePawn(1);
-
-
+		playerList.get(0).pawnsInGame = 1;
+		playerList.get(0).pawns.get(0).inBase= false;
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
+		playerList.get(0).playerTurn();
 	}
 
 }
