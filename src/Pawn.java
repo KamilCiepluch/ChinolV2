@@ -3,15 +3,18 @@ public class Pawn {
 	int pawnID;
 	boolean inBase;
 	boolean inHouse;
-	Pawn(String color,int pawnID)
+	int currentField;
+	int houseFieldID;
+	Pawn(String color,int pawnID,int houseFieldID)
 	{
 		this.color=color;
 		this.pawnID=pawnID;
 		this.inBase=true;
 		this.inHouse=false;
+		currentField=-1;
+		this.houseFieldID=houseFieldID;
 	}
-	int currentField;
-	int houseFieldID;
+
 
 
 	void movePawn(int number)

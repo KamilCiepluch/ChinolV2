@@ -12,11 +12,11 @@ public class Game {
 		int wybor=scanner.nextInt();
 		if(wybor<2 || wybor>4)
 			System.out.println("Zły wybór");
-		playerList.add(new Player("red"));
-		playerList.add(new Player("yellow"));
+		playerList.add(new Player("red",0));
+		playerList.add(new Player("yellow",12));
 		if(wybor>2)
-			playerList.add(new Player("green"));
+			playerList.add(new Player("blue",24));
 		if(wybor>3)
-			playerList.add(new Player("blue"));
+			playerList.add(new Player("green",36));
 	}
 }
