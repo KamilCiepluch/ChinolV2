@@ -25,7 +25,7 @@ public class Pawn {
 		currentField+= number;
 		if(number>48-1)
 		{
-			number = number-48;
+			currentField = number-48;
 			canEnterHouse = true;
 		}
 		if(canEnterHouse)
