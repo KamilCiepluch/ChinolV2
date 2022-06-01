@@ -3,11 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Game {
-
-
-
 	public static void main(String[] args) {
-		Game game=new Game();
 		Board board=new Board();
 		board.boardInitialize();
 		List<Player> playerList=new ArrayList<>();
@@ -18,5 +14,9 @@ public class Game {
 			System.out.println("Zły wybór");
 		playerList.add(new Player("red"));
 		playerList.add(new Player("yellow"));
+		if(wybor>2)
+			playerList.add(new Player("green"));
+		if(wybor>3)
+			playerList.add(new Player("blue"));
 	}
 }
